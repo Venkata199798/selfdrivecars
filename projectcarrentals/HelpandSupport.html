@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="keywords" content="important words">
+    <meta name="description" content="short note about web pages">
+    <meta name="Author" content="Author name">
+    <meta name="viewport" content="width=device-width">
+    <title>HelpandSupport</title>
+    
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: #000;
+            width: 100%;
+        }
+        .image{
+            height: 50px;
+            width: 50px;
+            border-radius: 20px;
+        }
+        
+        .ullist{
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        li{
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px;   
+        }
+        li:hover{
+            color: green;
+            font-size: 20px;
+        }
+        .bg-container{
+            padding: 5px;
+            margin-top: 20px;
+            
+            background-color: honeydew;
+            height: 100vh;
+            border-width: 1px;
+            
+            
+            
+        }
+        .container{
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            border: solid gray 1px;
+            box-shadow: gray;
+            padding-top: 10px;
+            margin: 5px;
+
+        }
+        .ddis{
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            
+        }
+        ol>li{
+            color: black;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-weight: 100;
+            
+            
+        }
+        </style>
+        </head>
+    <body>
+        <header>
+            <nav>
+                <div style="display: flex; margin: 5px;"><img src="images/selfdrive_thumb.jpg" class="image"/>
+                <p style="color: white; padding: 10px; font-weight: 600; font-size: 30px;">Self-drive.in</p></div>
+        
+                <ul class="ullist">
+                    <li onclick="home()">Home</li>
+                    <li onclick="traffic()">Triff</li>
+                    <li onclick="login()">Login And SignUp</li>
+                    <li onclick="host()">Host Vehicles Polices</li>
+                </ul>
+            </nav>
+            </header>
+            <div class="bg-container">
+                <h1>HELP & SUPPORT</h1>
+                <div class="ddis">
+                <div class="container" id="car1" onclick="car1()">
+                    <i class="fas fa-address-card"></i>
+                    <p>Joining Self-drive Car</p>
+                </div>
+           
+            
+                <div class="container"  id="book1" onclick="book1()">
+                    <i class="fas fa-car"></i>
+                    <p>Booking a Car</p>
+                </div>
+                <div class="container" id="pay1" onclick="pay1()">
+                    <i class="fas fa-calculator"></i>
+                    <p>Payements and Charges</p>
+                </div>
+                <div class="container" id="wal1" onclick="wal1()">
+                    <i class="fas fa-wallet"></i>
+                    <p>wallet and Refunds</p>
+                </div>
+                <div class="container" id="dea1" onclick="dea1()">
+                    <i class="fas fa-tag"></i>
+                    <p>Deals and Discounts</p>
+                </div>
+                <div class="container" id="live1" onclick="live1()">
+                    <i class="fas fa-headset"></i>
+                    <p>live assistance</p>
+                </div>
+                
+            </div>
+            <div style="padding: 10px;">
+            <h2>Popular Queries</h2>
+            <ol>
+                <li>Do i have to return the car at the same location where i picked up</li>
+                <li>What happens if i written the car late</li>
+                <li>Is their any km limit to how much i can drive</li>
+                <li>How to unlock my car</li>
+            </ol>
+            <div style="text-align: center;">
+            <input type="button" value="Show More"/>
+            </div>
+            <label>Email:</label>
+            <p style="color: green;">self-drive@gmail.com</p>
+            <hr>
+            <label>Call Center Number</label>
+            <p style="color:green">xxxxxxxxxx</p>
+
+            </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="project.js"></script>
+    </body>
+</html>

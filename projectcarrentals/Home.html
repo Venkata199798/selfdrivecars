@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="keywords" content="important words">
+    <meta name="description" content="short note about web pages">
+    <meta name="Author" content="Author name">
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: #000;
+            width: 100%;
+        }
+        .image1{
+            height: 50px;
+            width: 50px;
+            border-radius: 20px;
+        }
+        
+        .ullist{
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        li{
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px;   
+        }
+        li:hover{
+            color: green;
+            font-size: 20px;
+        }
+        section{
+            margin: 8px;
+            padding: 5px;
+        }
+        p{
+            color: black;
+            font-size: 16px;
+            font-family: "Roboto";
+        }
+        h5{
+        color: #000;
+        font-size: 16px;
+        font-family: "Roboto";
+    }
+    .bg-ground{
+        background-image: url("images/cars.webp");
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        text-align: center;
+
+    }
+    input{
+        margin: 5px;
+        width: 300px;
+        width: 250px;
+    }
+    h5{
+        font-family: "Roboto";
+    }
+    .input-text{
+        color: black;
+        font-weight: 600px;
+        font-size: 16px;
+        background-color: green;
+    }
+    .dis-image{
+        text-align: center;
+        margin: 5PX;
+    }
+    </style>
+</head>
+<body>
+    <!-- if we click on the list items we will navigate to the particular page-->
+    <header>
+        <nav>
+            <div style="display: flex; margin: 5px;">
+            <img src="images/selfdrive_thumb.jpg" class="image1" alt="image"/>>
+            <p style="color: white; padding: 10px; font-weight: 600; font-size: 30px;">Self-drive.in</p></div>
+    
+            <ul class="ullist">
+                <li onclick="traffic()">Triff</li>
+                <li onclick="login()">Login and signUp</li>
+                <li onclick="host()">Host Vehicles Polices</li>
+                <li onclick="help()">Help & Support</li>
+            </ul>
+        </nav>
+        </header>
+    <div class="bg-ground">
+        <h3>ROUND A TRIP</h3>
+        <input type="text" placeholder="Pick Up The City"><br>
+       <a href="https://www.redbus.in/car-rental/"><input type="button" value="Find Cars" class="input-text"></a> 
+    </div>
+    <div class="dis-image">
+        <img src="images/discounttimage.jpg">
+    </div>
+    <section>
+    
+    <h5>SELF DRIVE CARS IN HYDERABAD</h5>
+    <p>One-half of a twin city, Hyderabad is a city of opposites. While one-half is steeped in history and thronged with people, the other is sleek and filled with malls, offices and restaurants. What makes Hyderabad truly special is the mix of people that live in this dynamic city. With the economy booming, the number of young people has gone up over the past few years leading to the birth of a lifestyle that focuses on leisure just as much as work. Short holidays and road trips have become the norm, 
+    and with driving being viewed as an expression of freedom, the need for car rental services in Hyderabad has risen.</p>
+    </section>
+    <section>
+        <h5>CAR RENTAL IN HYDERABAD</h5>
+        <p>With business being on one side of the city and affordable residences on the other, commuting is a part of daily life. If you’re someone that does not want the hassle of dealing with driver schedules from traditional car rental services in Hyderabad, you can choose a self-drive car from Zoomcar to ensure you have full control over your schedule at all times. With cab fares being astronomically high, you can get a car for rent in Hyderabad just when you get out of the airport.
+        Hyderabad airport taxi service from Zoomcar is readily available when you arrive at Rajiv Gandhi International Airport. Head to the parking lot where you can opt for any one of the self-driven cars for rent in Hyderabad. If you're looking for a quick weekend getaway from Hyderabad to Srisailam, you can get a vehicle that comes with 24x7 roadside assistance so you can have a hassle-free journey.</p>
+        </section>
+        <section>   
+        <h5>RENT A CAR IN HYDERABAD</h5>
+        <p>Getting self-driven cars for rent in Hyderabad has never been simpler, and you can begin by picking from the 
+        wide range of self-drive cars on the Zoomcar website or app. Each of these cars comes with vehicle insurance 
+        and all India permits and is a safe bet for young women who love driving. Maybe this weekend, you can get a car on rent in Hyderabad 
+        plan that much needed getaway from Hyderabad to Vijayawada.</p>
+    </section>
+    <section>
+        <h5>ABOUT SELF-DRIVE CARS</h5>
+        <p>No more worries about petrol mileage, insurance, and car breakdowns! self-drivecar has enabled driving convenience for travellers around the country and is fast expanding its reach to cities including Ahmedabad, Bangalore, Chandigarh, Chennai, Coimbatore, Delhi-NCR, Hyderabad, Jaipur, Kochi, Kolkata, Ludhiana, Mangalore, Mumbai, Mysore, Pune, Siliguri and Vizag. 
+            Self-drive cars from  have given customers more control, privacy, and freedom. Book a self-drive car in any city you visit with the Zoomcar app on your phone and feel at home wherever you go. </p>
+    </section>
+    <footer style="text-align: center; margin-top: 10px; background-color: gray;">
+        <i class="far fa-copyright"></i>
+        <small>Copyright India Pvt.ltd</small>
+    </footer>
+    <script src="project.js"></script>
+</body>
+</html>
